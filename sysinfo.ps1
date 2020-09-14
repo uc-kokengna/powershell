@@ -23,7 +23,7 @@ write-host("This machine's IP is {2}. " -f $IP + $User + $Domain + $Version + "T
 
 $BODY = "This machine's IP is {2}. " -f $IP + $User + $Domain + $Version + "Today's Date is {0}." -f $Date
        
-Send-MailMessage -To "kokengeinohio@gmail.com" -From "kokengna@mail.uc.edu" -Subject "IT3038C Windows SysInfo" -Body $BODY -SmtpServer smtp.gmail.com -port 587 -UseSSL -Credential (Get-Credential)
+Send-MailMessage -To "username@gmail.com" -From "username@gmail.com" -Subject "IT3038C Windows SysInfo" -Body $BODY -SmtpServer smtp.gmail.com -port 587 -UseSSL -Credential (Get-Credential)
 #smtp.google.com
 
            
